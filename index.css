@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* set the height of the body to 100% of the viewport height */
+    background-color: hsl(212, 45%, 89%);
+  }
+  
+.card {
+  /* common styles for all screen sizes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  background-color: white;
+  border-radius: 10px;
+}  
+      
+  .qrimg {
+    display: flex;
+    justify-content: center;
+    width: 60%; /* set the width of the image to 50% of its container */
+    margin: 1em;
+  }
+    
+  .qrimg img {
+    width: 290px; /* set the width of the image to 200 pixels */
+    border-radius: 10px;
+
+  }
+
+h1 {
+    font-size: 160%;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+  
+.heading {
+    display: flex;
+    justify-content: center;
+    /* border: blue solid 2px; */
+
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border: blue solid 2px; */
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+      max-width: 80%; /* reduce max width of the card for smaller screens */
+    }
+    
+    .qrimg {
+      width: 80%; /* adjust width of qrimg container for smaller screens */
+    }
+    
+    .qrimg img {
+      width: 100%; /* make qr code image width 100% of its container to prevent stretching */
+      height: auto; /* set height to auto to preserve aspect ratio */
+      margin: 0; /* remove margin to keep image centered in its container */
+    }
+  }
+    
